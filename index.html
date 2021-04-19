@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style-dark.css') }}">
+	<script src="https://kit.fontawesome.com/cfc581f12f.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Dictionary</title>
+</head>
+<body class="dark-theme">
+
+	<div id="theme-toggler">
+		<i id="theme" class="fas fa-cloud-moon"></i>
+	</div>
+
+	<div class="container">
+	<h3>
+		Personal Dictionary
+	</h3>
+	<div id="navbar">
+		<div>
+			<label for="searchText">Search</label>
+			<input type="text" id="search-words"/>
+			<button id="search-button"><i class="fas fa-search"></i></button>
+		</div>
+		<button type="button" class="open" data-toggle="modal" data-target="#myModal">Add/Update Words</button>
+	</div>
+	<div class="table-continer">
+		<table id="table" class="table table-bordered">
+			<thead>
+				<tr class="data-heading">
+					<th class="word">Words</th>
+					<th class="def">Definitions</th>
+					<th class="action">Action</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
+	<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      	<div class="modal-header">
+	        <h4 class="modal-title">Add/Update Words</h4>
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+     	 </div>
+      <div class="modal-body">
+        <div class="update">
+        	<label for="wordText">Search</label>
+			<input type="text" id="wordText"/>
+        </div>
+        <div class="update">
+        	<label for="def">Definition</label>
+			<textarea id="def"></textarea>
+        </div>
+        <div class="update-button">
+        	<button class="btn btn-info" id="add">
+        		Add
+        	</button>
+        	<button class="btn btn-info" id="update">
+        		Update
+        	</button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+	</div>
+
+	<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
