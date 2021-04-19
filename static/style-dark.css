@@ -1,0 +1,79 @@
+.dark-theme{
+	color:white;
+	background: black;
+}
+
+.dark-theme h3{
+	border-radius: 20px;
+	padding: 10px;
+	background: #ffffff59;
+	box-shadow: 4px 4px 10px -2px;
+}
+
+.dark-theme #navbar{
+	background: #fdfcfc6b;
+}
+
+.dark-theme #search-button{
+	background: #fdfcfc00;
+}
+
+.dark-theme #search-words{
+	background: #444;
+}
+
+.dark-theme .open{
+	background: #555;
+	box-shadow: none;
+}
+
+.dark-theme .open:hover{
+	background: #00000094;
+}
+
+.dark-theme thead{
+	background: #fff2;
+}
+
+
+
+.dark-theme .odd-row{
+	background: #fff3;	
+}
+
+.dark-theme .even-row{
+	background: #fff4;
+}
+
+
+.dark-theme .data-row{
+	color:#ccc;
+}
+
+.dark-theme .data-row:hover{
+	background: #fff1;
+}
+
+.dark-theme .modal-content{
+	background: black;
+}
+
+.dark-theme .close{
+	color:white;
+	opacity: 0.8;
+	text-shadow: none;
+}
+
+.dark-theme #def,.dark-theme #wordText{
+	background: #333;
+}
+
+.dark-theme button,.dark-theme input,.dark-theme select,.dark-theme textarea {
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  color: #fff;
+}
+
