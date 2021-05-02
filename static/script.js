@@ -38,6 +38,7 @@ function searchWords(){
 	$.get(`/find?word=${word}`,(res,code)=>{
 		updateTable(JSON.parse(res));
 	})
+
 }
 
 function updateTable(data) {
